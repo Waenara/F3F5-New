@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!-- LINKS AND META-->
+<title id="animatedTitle">F3F5</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Русский сервер f3f5 | Без лицензии">
+<meta property="og:description" content="Сервер майнкрафта основанный на идее, что игроки могут делать практически все что угодно. Мир никогда не сбрасывается, PVP, отсутствие любых правил. Вас не могут забанить ни по какой причине.">
+<meta property="og:url" content="https://f3f5.org">
+<meta property="og:image" content="assets/img/banner.png">
+<meta property="og:site_name" content="f3f5.org - Анархия">
+<meta property="og:locale" content="ru_RU">
+
+<!-- SITE -->
+<body style="background-image: url(assets/img/background.png); background-color: #251a12;">
+    <div class="menu aspectWrapper" id="menu" style="display: none;">
+        <div class="titleStart">
+            <a id="toggle-theme" style="cursor: pointer;"><img id="imageTheme" src="assets/img/sun.png" class="themeButton" style="position: absolute; padding: 1rem; right: 0%;" alt=""/></a>
+            <div class="title">
+                <div class="text-main-red">F3</div><div class="text-main-blue">F5</div>
+            </div>
+            <div class="status">
+                <ol>
+                    <ul id="players" class="statusRight"><b>Игроков на сервере: {players}</b></ul>
+                    <!--<ul id="motd" class="statusLeft"><b>Текущий MOTD: {motd}</b></ul>-->
+                </ol>
+            </div>
+        </div>
+        <div class="content">
+            <div class="boxName">
+                <a>О сервере</a>
+            </div>
+            <div class="box">
+                <p>Сервер майнкрафта основанный на идее, что <a class="marker">игроки могут делать практически все что угодно</a>. Мир никогда не сбрасывается, PVP, отсутствие любых правил. Вас не могут забанить ни по какой причине.</p>
+                <p><i>Сервер работает с 28 июня 2023 года, 23:55 по GE | Версия сервера 1.12.2</i></p>
+                <button id="ip" class="minecraft-btn aspectWrapperButton">IP: f3f5.org</button>
+            </div>
+
+
+
+            <div class="boxName">
+                <a>Помощь</a>
+            </div>
+            <div class="box">
+                <p><b>Я ничего не продаю в игре, однако каждый месяц необходимо оплачивать дорогое оборудование. Пожертвования помогут удержаться серверу на плаву.</b></p>
+                <a href="https://my.qiwi.com/form/Edvard-AWNPQOo-Uj" onclick="playSound()" target="_blank"><button class="minecraft-btn aspectWrapperButton">Пожертвовать</button></a>
+            </div>
+
+
+            <div class="boxName">
+                <a>Соц. сети</a>
+            </div>
+            <div class="box">
+                <div class="btn-group">
+                    <a href="https://youtube.com/@f3f5" onclick="playSound()" target="_blank"><button class="minecraft-btn aspectWrapperButtonList">YouTube</button></a>
+                    <a href="https://dsc.gg/f3f5" onclick="playSound()" target="_blank"><button class="minecraft-btn aspectWrapperButtonList">Discord</button></a>
+                    <a href="https://vk.com/f3f5_russia" onclick="playSound()" target="_blank"><button class="minecraft-btn aspectWrapperButtonList">VK</button></a>
+                </div>
+            </div>
+            <p class="credits">Made by <a href="https://t.me/Waenara" target="_blank" style="color:rgb(255, 0, 0);"><b>Waenara</b></a> for F3F5</p>
+        </div>
+    </div>    
+
+    <!-- SCRIPTS -->
+    <script src="assets/JS/main.js"></script>
+    <script src="assets/JS/theme.js"></script>
+    <script>
+        function addCss(fileName) {
+            var head = document.head;
+            var link = document.createElement("link");
+    
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = fileName;
+    
+            head.appendChild(link);
+        }
+        const Menu = document.getElementById('menu')
+        if (/Mobi/.test(navigator.userAgent)) {
+            addCss('mobile-style.css')
+        }
+        document.getElementById('menu').style.display = 'block'
+    </script>
+</body>

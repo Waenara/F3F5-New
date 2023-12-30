@@ -1,0 +1,53 @@
+.aspectWrapperButton {
+    height: 6rem !important;       
+    font-size: 2.5rem;   
+}
+.aspectWrapperButtonList {
+    height: 6rem;       
+    font-size: 2.5rem;  
+}
+.themeButton{
+    width: 8rem;
+}
+.menu {
+    max-width: 95%;
+    height: 80%;
+}.title{
+    margin-top: 5rem;
+    margin-bottom: 3.5rem;
+    font-size: 10rem;
+    justify-content: center;
+}
+.credits{
+    font-size: 1.5rem;
+}.box{
+    border: 4px solid var(--boxOutline);
+}
+.box p {
+    font-size: 2.5rem;
+}
+.boxName{
+    border: 4px solid var(--boxOutline);
+    height: 6rem;
+    font-size: 2.8rem;
+}.minecraft-btn {
+  	text-shadow: 10px 10px #4C4C4C;
+}
+@keyframes titleAnimation {
+    to{
+        margin-top: 10rem;
+    }
+}
+@keyframes Status {
+    from{
+        font-size: 0%;
+    }
+    to{
+        font-size: 220%;
+    }
+}
+@keyframes Status2 {
+    to{
+        height: 9rem;
+    }
+}
